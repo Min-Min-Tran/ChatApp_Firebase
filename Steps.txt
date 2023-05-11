@@ -1,0 +1,26 @@
+1. Add Firebase to Android, IOS, Windows
+    + Android:
+        - Go to AndroidManifest.xml to get package name
+        - cd android -> ./gradlew signingReport -> SHA1
+        - Download google-services.json file, then move to android/app folder
+        - Add Firebase SDK:
+            . Add dependencies in android/build.gradle, app/build.gradle
+            . Quick tip: minSdkVersion 21,  multiDexEnabled true
+            . Go to Project Settings to add SHA-256 
+    + IOS: Using XCode
+
+2. Firebase.initializeapp() -> android & IOS
+Firebase.initializeapp(options: ) -> web
+3. Add libs: firebase_auth,firebase_core,cloud_firestore,shared_preferences
+
+TODO:
+- Github with Vscode
+- mounted: Whether this State object is currently in a tree.
+- final vs const
+- ListTile vs ListView
+- Form Key
+- SharedPreferences
+- FirebaseAuth - QuerySnapshot
+- Devtools
+- Provider
+- CI/CD, Fastlane
